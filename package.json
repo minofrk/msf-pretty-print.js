@@ -1,0 +1,54 @@
+{
+  "name": "@minofrk/msf-pretty-print",
+  "version": "0.0.0",
+  "description": "An opinionated pretty-printer for MSF format.",
+  "keywords": [
+    "json",
+    "msf",
+    "xelto"
+  ],
+  "homepage": "https://github.com/minofrk/msf-pretty-print.js",
+  "bugs": {
+    "url": "https://github.com/minofrk/msf-pretty-print.js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minofrk/msf-pretty-print.js.git"
+  },
+  "license": "MIT",
+  "author": "古城みの <minofrk@gmail.com>",
+  "files": [
+    "src",
+    "lib",
+    "esm"
+  ],
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc && tsc -p tsconfig.esm.json",
+    "clean": "rimraf lib esm coverage",
+    "lint": "eslint src test --ext ts",
+    "test": "tsc --noEmit && jest && npm run lint"
+  },
+  "dependencies": {
+    "fp-ts": "^1.18.2",
+    "io-ts": "^1.8.6",
+    "json-stable-stringify": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.13",
+    "@types/json-stable-stringify": "^1.0.32",
+    "@types/node": "^12.0.6",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.17.1",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^24.0.2",
+    "typescript": "~3.5.1"
+  }
+}
