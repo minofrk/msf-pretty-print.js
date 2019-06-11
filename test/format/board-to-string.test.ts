@@ -9,9 +9,6 @@ ${indentString}["aaa", "bbb", "ccc"],
 ${indentString}[ null, "ddd",  null]
 ]`,
     ],
-])(
-    'format/board-to-string (%#)',
-    (input, expected): void => {
-        expect(board(input)).toBe(expected);
-    },
-);
+])('format/board-to-string (%#)', (input, expected): void => {
+    expect(board(input)).toBe(expected);
+});

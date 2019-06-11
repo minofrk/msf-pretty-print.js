@@ -17,9 +17,6 @@ test.each<[string, unknown, Option<string>]>([
     ['korol', ['a', 'b', 'c', 'd'], some('["a", "b", "c", "d"]')],
     ['asdf', ['a', 'b', 'c', 'd'], none],
     ['txifol', [1, 2, 3], none],
-])(
-    'format (%#)',
-    (key, value, expected): void => {
-        expect(format(key, value)).toStrictEqual(expected);
-    },
-);
+])('format (%#)', (key, value, expected): void => {
+    expect(format(key, value)).toStrictEqual(expected);
+});
