@@ -25,9 +25,6 @@ test.each([
             'imet',
         ],
     ],
-])(
-    'comparator (%#)',
-    (input, expected): void => {
-        expect([...input].sort(comparator)).toStrictEqual(expected);
-    },
-);
+])('comparator (%#)', (input, expected): void => {
+    expect([...input].sort(comparator)).toStrictEqual(expected);
+});
