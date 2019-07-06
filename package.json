@@ -32,7 +32,7 @@
     "test": "tsc --noEmit && jest && npm run lint"
   },
   "dependencies": {
-    "fp-ts": "^1.18.2",
+    "fp-ts": "^2.0.1",
     "io-ts": "^1.8.6",
     "json-stable-stringify": "^1.0.1"
   },
