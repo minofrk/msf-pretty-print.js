@@ -2,6 +2,7 @@ import stringify from 'json-stable-stringify';
 import { indentString } from './constants';
 import format from './format';
 import comparator from './comparator';
+import { isNone } from 'fp-ts/lib/Option';
 
 export default function msfPrettyPrint(source: unknown): string {
     const replacements: string[] = [];
@@ -9,7 +10,7 @@ export default function msfPrettyPrint(source: unknown): string {
     const replacer: stringify.Replacer = (key, value: unknown): unknown => {
         const product = format(key, value);
 
-        if (product.isNone()) return value;
+        if (isNone(product)) return value;
 
         replacements.push(product.value);
         return '$' + (replacements.length - 1);
