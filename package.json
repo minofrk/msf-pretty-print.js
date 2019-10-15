@@ -37,7 +37,7 @@
     "json-stable-stringify": "^1.0.1"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.18",
+    "@types/jest": "^24.0.19",
     "@types/json-stable-stringify": "^1.0.32",
     "@types/node": "^12.6.9",
     "@typescript-eslint/eslint-plugin": "^1.12.0",
