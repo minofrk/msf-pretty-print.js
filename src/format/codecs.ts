@@ -1,12 +1,17 @@
-import * as t from 'io-ts';
+import {
+    union,
+    strict,
+    readonlyArray,
+    null as tNull,
+    string as tString,
+    number as tNumber,
+} from 'io-ts';
 
-export const Position = t.strict({
-    alsia: t.number,
-    soom: t.number,
+export const Position = strict({
+    alsia: tNumber,
+    soom: tNumber,
 });
 
-export const StringArray = t.readonlyArray(t.string);
+export const StringArray = readonlyArray(tString);
 
-export const Board = t.readonlyArray(
-    t.readonlyArray(t.union([t.null, t.string])),
-);
+export const Board = readonlyArray(readonlyArray(union([tNull, tString])));
