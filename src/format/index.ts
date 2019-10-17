@@ -20,9 +20,7 @@ export default function format(key: string, value: unknown): Option<string> {
     }
 
     if ((key === 'txifol' || key === 'korol') && StringArray.is(value)) {
-        return some(
-            '[' + value.map((x): string => JSON.stringify(x)).join(', ') + ']',
-        );
+        return some('[' + value.map((x): string => `"${x}"`).join(', ') + ']');
     }
 
     return none;

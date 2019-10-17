@@ -1,7 +1,7 @@
 import { indentString } from '../constants';
 
 function cellToString(cell: null | string): string {
-    return (cell ? '' : ' ') + JSON.stringify(cell);
+    return cell ? `"${cell}"` : ' null';
 }
 
 function rowToString(row: readonly (null | string)[]): string {
