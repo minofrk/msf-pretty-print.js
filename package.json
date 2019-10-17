@@ -1,6 +1,6 @@
 {
   "name": "@minofrk/msf-pretty-print",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An opinionated pretty-printer for MSF format.",
   "keywords": [
     "json",
