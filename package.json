@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "fp-ts": "^2.8.6",
-    "io-ts": "^2.2.12",
+    "io-ts": "^2.2.13",
     "json-stable-stringify": "^1.0.1"
   },
   "devDependencies": {
