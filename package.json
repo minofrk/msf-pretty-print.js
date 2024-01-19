@@ -34,11 +34,11 @@
   "dependencies": {
     "fp-ts": "^2.11.5",
     "io-ts": "^2.2.16",
-    "json-stable-stringify": "^1.0.1"
+    "json-stable-stringify": "^1.1.1"
   },
   "devDependencies": {
     "@types/jest": "^24.9.1",
-    "@types/json-stable-stringify": "^1.0.33",
+    "@types/json-stable-stringify": "^1.0.36",
     "@types/node": "^12.20.36",
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.34.0",
